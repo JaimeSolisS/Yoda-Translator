@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		340049F7ABA534B8E894C62D /* Pods_YodaTranslator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87957DE225651EE0C7CE03B /* Pods_YodaTranslator.framework */; };
+		DA40700E22C4498B009CC009 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40700D22C4498B009CC009 /* WelcomeViewController.swift */; };
+		DA40701122C451F7009CC009 /* Soloist-Z6M8.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA40700F22C451F7009CC009 /* Soloist-Z6M8.otf */; };
+		DA40701222C451F7009CC009 /* Soloist3D-3vP6.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA40701022C451F7009CC009 /* Soloist3D-3vP6.otf */; };
+		DA40701522C455F5009CC009 /* Pixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA40701422C455F5009CC009 /* Pixel.ttf */; };
+		DA40701722C45766009CC009 /* FreePixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA40701622C45766009CC009 /* FreePixel.ttf */; };
+		DA75C35C22C41FB40086D6FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA75C35B22C41FB40086D6FB /* AppDelegate.swift */; };
+		DA75C35E22C41FB40086D6FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA75C35D22C41FB40086D6FB /* ViewController.swift */; };
+		DA75C36122C41FB40086D6FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA75C35F22C41FB40086D6FB /* Main.storyboard */; };
+		DA75C36322C41FB60086D6FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA75C36222C41FB60086D6FB /* Assets.xcassets */; };
+		DA75C36622C41FB60086D6FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA75C36422C41FB60086D6FB /* LaunchScreen.storyboard */; };
+		DA7F0D7F22CB1EB9009C0372 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA7F0D7E22CB1EB9009C0372 /* GoogleService-Info.plist */; };
+		DA7F0D8122CB2E1E009C0372 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F0D8022CB2E1E009C0372 /* RegisterViewController.swift */; };
+		DA7F0D8722CB3B9B009C0372 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F0D8622CB3B9B009C0372 /* TabBarViewController.swift */; };
+		DA85D20C22C5C3EB0055655B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85D20A22C5C3EB0055655B /* TableViewCell.swift */; };
+		DA85D20D22C5C3EB0055655B /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA85D20B22C5C3EB0055655B /* TableViewCell.xib */; };
+		DA85D20F22C5CCF70055655B /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85D20E22C5CCF70055655B /* Quote.swift */; };
+		DA85D21122C5CE880055655B /* MyQuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85D21022C5CE880055655B /* MyQuotesTableViewController.swift */; };
+		DA85D21322C5E3530055655B /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85D21222C5E3530055655B /* FavoritesTableViewController.swift */; };
+		DA85D21522C5ED6B0055655B /* YodishGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85D21422C5ED6B0055655B /* YodishGeneratorViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5BD885051E6FD1224E5B481A /* Pods-YodaTranslator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YodaTranslator.release.xcconfig"; path = "Target Support Files/Pods-YodaTranslator/Pods-YodaTranslator.release.xcconfig"; sourceTree = "<group>"; };
+		A87957DE225651EE0C7CE03B /* Pods_YodaTranslator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YodaTranslator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A993D882951A4D03991D4B0F /* Pods-YodaTranslator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YodaTranslator.debug.xcconfig"; path = "Target Support Files/Pods-YodaTranslator/Pods-YodaTranslator.debug.xcconfig"; sourceTree = "<group>"; };
+		DA40700D22C4498B009CC009 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		DA40700F22C451F7009CC009 /* Soloist-Z6M8.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soloist-Z6M8.otf"; sourceTree = "<group>"; };
+		DA40701022C451F7009CC009 /* Soloist3D-3vP6.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soloist3D-3vP6.otf"; sourceTree = "<group>"; };
+		DA40701422C455F5009CC009 /* Pixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pixel.ttf; sourceTree = "<group>"; };
+		DA40701622C45766009CC009 /* FreePixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FreePixel.ttf; sourceTree = "<group>"; };
+		DA75C35822C41FB40086D6FB /* YodaTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YodaTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA75C35B22C41FB40086D6FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA75C35D22C41FB40086D6FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA75C36022C41FB40086D6FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA75C36222C41FB60086D6FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA75C36522C41FB60086D6FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA75C36722C41FB60086D6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7F0D7E22CB1EB9009C0372 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DA7F0D8022CB2E1E009C0372 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		DA7F0D8622CB3B9B009C0372 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		DA85D20A22C5C3EB0055655B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		DA85D20B22C5C3EB0055655B /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		DA85D20E22C5CCF70055655B /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		DA85D21022C5CE880055655B /* MyQuotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQuotesTableViewController.swift; sourceTree = "<group>"; };
+		DA85D21222C5E3530055655B /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		DA85D21422C5ED6B0055655B /* YodishGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YodishGeneratorViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA75C35522C41FB40086D6FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340049F7ABA534B8E894C62D /* Pods_YodaTranslator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E561985F3476D078E105A41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A993D882951A4D03991D4B0F /* Pods-YodaTranslator.debug.xcconfig */,
+				5BD885051E6FD1224E5B481A /* Pods-YodaTranslator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AA78600893FF21E6433B076F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A87957DE225651EE0C7CE03B /* Pods_YodaTranslator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA40701322C4520F009CC009 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DA40701622C45766009CC009 /* FreePixel.ttf */,
+				DA40701422C455F5009CC009 /* Pixel.ttf */,
+				DA40700F22C451F7009CC009 /* Soloist-Z6M8.otf */,
+				DA40701022C451F7009CC009 /* Soloist3D-3vP6.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DA75C34F22C41FB40086D6FB = {
+			isa = PBXGroup;
+			children = (
+				DA75C35A22C41FB40086D6FB /* YodaTranslator */,
+				DA75C35922C41FB40086D6FB /* Products */,
+				2E561985F3476D078E105A41 /* Pods */,
+				AA78600893FF21E6433B076F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DA75C35922C41FB40086D6FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA75C35822C41FB40086D6FB /* YodaTranslator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA75C35A22C41FB40086D6FB /* YodaTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				DA75C35B22C41FB40086D6FB /* AppDelegate.swift */,
+				DA75C35D22C41FB40086D6FB /* ViewController.swift */,
+				DA75C35F22C41FB40086D6FB /* Main.storyboard */,
+				DA7F0D8622CB3B9B009C0372 /* TabBarViewController.swift */,
+				DA7F0D8022CB2E1E009C0372 /* RegisterViewController.swift */,
+				DA85D21422C5ED6B0055655B /* YodishGeneratorViewController.swift */,
+				DA85D21222C5E3530055655B /* FavoritesTableViewController.swift */,
+				DA85D21022C5CE880055655B /* MyQuotesTableViewController.swift */,
+				DA85D20E22C5CCF70055655B /* Quote.swift */,
+				DA85D20A22C5C3EB0055655B /* TableViewCell.swift */,
+				DA85D20B22C5C3EB0055655B /* TableViewCell.xib */,
+				DA40701322C4520F009CC009 /* Fonts */,
+				DA40700D22C4498B009CC009 /* WelcomeViewController.swift */,
+				DA75C36222C41FB60086D6FB /* Assets.xcassets */,
+				DA75C36422C41FB60086D6FB /* LaunchScreen.storyboard */,
+				DA75C36722C41FB60086D6FB /* Info.plist */,
+				DA7F0D7E22CB1EB9009C0372 /* GoogleService-Info.plist */,
+			);
+			path = YodaTranslator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA75C35722C41FB40086D6FB /* YodaTranslator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA75C36A22C41FB60086D6FB /* Build configuration list for PBXNativeTarget "YodaTranslator" */;
+			buildPhases = (
+				41BFB2E24749C440C7FC972B /* [CP] Check Pods Manifest.lock */,
+				DA75C35422C41FB40086D6FB /* Sources */,
+				DA75C35522C41FB40086D6FB /* Frameworks */,
+				DA75C35622C41FB40086D6FB /* Resources */,
+				D47B306538A7777FFAE8BF0D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YodaTranslator;
+			productName = YodaTranslator;
+			productReference = DA75C35822C41FB40086D6FB /* YodaTranslator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA75C35022C41FB40086D6FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = ITESM;
+				TargetAttributes = {
+					DA75C35722C41FB40086D6FB = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = DA75C35322C41FB40086D6FB /* Build configuration list for PBXProject "YodaTranslator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA75C34F22C41FB40086D6FB;
+			productRefGroup = DA75C35922C41FB40086D6FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA75C35722C41FB40086D6FB /* YodaTranslator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA75C35622C41FB40086D6FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA40701222C451F7009CC009 /* Soloist3D-3vP6.otf in Resources */,
+				DA75C36622C41FB60086D6FB /* LaunchScreen.storyboard in Resources */,
+				DA7F0D7F22CB1EB9009C0372 /* GoogleService-Info.plist in Resources */,
+				DA75C36322C41FB60086D6FB /* Assets.xcassets in Resources */,
+				DA40701522C455F5009CC009 /* Pixel.ttf in Resources */,
+				DA40701722C45766009CC009 /* FreePixel.ttf in Resources */,
+				DA85D20D22C5C3EB0055655B /* TableViewCell.xib in Resources */,
+				DA40701122C451F7009CC009 /* Soloist-Z6M8.otf in Resources */,
+				DA75C36122C41FB40086D6FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41BFB2E24749C440C7FC972B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YodaTranslator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D47B306538A7777FFAE8BF0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YodaTranslator/Pods-YodaTranslator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YodaTranslator/Pods-YodaTranslator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YodaTranslator/Pods-YodaTranslator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA75C35422C41FB40086D6FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7F0D8122CB2E1E009C0372 /* RegisterViewController.swift in Sources */,
+				DA85D21122C5CE880055655B /* MyQuotesTableViewController.swift in Sources */,
+				DA40700E22C4498B009CC009 /* WelcomeViewController.swift in Sources */,
+				DA85D20C22C5C3EB0055655B /* TableViewCell.swift in Sources */,
+				DA75C35E22C41FB40086D6FB /* ViewController.swift in Sources */,
+				DA85D21522C5ED6B0055655B /* YodishGeneratorViewController.swift in Sources */,
+				DA85D20F22C5CCF70055655B /* Quote.swift in Sources */,
+				DA85D21322C5E3530055655B /* FavoritesTableViewController.swift in Sources */,
+				DA7F0D8722CB3B9B009C0372 /* TabBarViewController.swift in Sources */,
+				DA75C35C22C41FB40086D6FB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA75C35F22C41FB40086D6FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA75C36022C41FB40086D6FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA75C36422C41FB60086D6FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA75C36522C41FB60086D6FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA75C36822C41FB60086D6FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA75C36922C41FB60086D6FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA75C36B22C41FB60086D6FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A993D882951A4D03991D4B0F /* Pods-YodaTranslator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7T9J4YR7S;
+				INFOPLIST_FILE = YodaTranslator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.tec.mobile.Yodish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA75C36C22C41FB60086D6FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BD885051E6FD1224E5B481A /* Pods-YodaTranslator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7T9J4YR7S;
+				INFOPLIST_FILE = YodaTranslator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.tec.mobile.Yodish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA75C35322C41FB40086D6FB /* Build configuration list for PBXProject "YodaTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA75C36822C41FB60086D6FB /* Debug */,
+				DA75C36922C41FB60086D6FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA75C36A22C41FB60086D6FB /* Build configuration list for PBXNativeTarget "YodaTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA75C36B22C41FB60086D6FB /* Debug */,
+				DA75C36C22C41FB60086D6FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA75C35022C41FB40086D6FB /* Project object */;
+}

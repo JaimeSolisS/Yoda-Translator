@@ -13,5 +13,6 @@ pod 'Alamofire'
 pod 'SwiftyJSON'
 pod 'SVProgressHUD'
 pod 'ChameleonFramework'
+pod 'Firebase/Database'
 
 end

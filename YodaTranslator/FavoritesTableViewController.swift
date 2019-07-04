@@ -7,48 +7,48 @@
 //
 
 import UIKit
+import SVProgressHUD
+import FirebaseDatabase
+import Firebase
 
 class FavoritesTableViewController: UITableViewController {
 
     var quotes = [Quote]()
     var quote: Quote!
+    var quoteStr: String!
+    var user: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        quote = Quote(quote: "Come here to chew bubble gum and kick ***, have I. And all out of bubble gum, I am.")
-        quotes.append(quote)
-        quote = Quote(quote: "Barbie girl, am I, in the barbie world. Life in plastic, fantastic, it is fantastic! Brush my hair, you can, me everywhere undress. Imagination, your creation, life is. Come on barbie, go party, let us! Yeesssssss.")
-        quotes.append(quote)
-        quote = Quote(quote: "The yoda therapist, I am. To get in touch with your inner yoda, speak like yoda for a day, you must. Then be in touch with your inner yoda, you will. 150 bucks, that will be. Yes, hmmm.")
-        quotes.append(quote)
-        quote = Quote(quote: "If you feel an intense burning feeling, sharp stinging pain, you may be getting sliced in half. Common side effect of yoda, this is. Your jedi master right away consult. Herh herh herh.")
-        quotes.append(quote)
-        quote = Quote(quote: "Impossible, this next test is, to solve it make no attempt.")
-        quotes.append(quote)
-        quote = Quote(quote: "Charging the entire clone army with identity theft, I heard that jango fett was.")
-        quotes.append(quote)
-        quote = Quote(quote: "If big butts you like not, then get fit, you must!")
-        quotes.append(quote)
-        quote = Quote(quote: "If to learn the speakings of yoda you try, seen too much star wars, you have. Herh herh herh.")
-        quotes.append(quote)
-        quote = Quote(quote: "Woodchuck chuck, how much wood could, if chuck wood, a woodchuck could, hmm? Yes, hmmm.")
-        quotes.append(quote)
-        quote = Quote(quote: "You may say, a dreamer, am I; But I am the only one not; I hope some day, join us, you will; And live as one, the world will. Yes, hmmm.")
-        quotes.append(quote)
-        quote = Quote(quote: "Got to ask yourself one question, you have. Feel lucky, do I, hmm? Well, do you, punk, hmm?")
-        quotes.append(quote)
-        quote = Quote(quote: "To be, or to be not. The question, that is. Hmmmmmm.")
-        quotes.append(quote)
-        quote = Quote(quote: "What the h**l, talking about, are you?")
-        quotes.append(quote)
-        quote = Quote(quote: "I cannot believe it is butter not!")
-        quotes.append(quote)
-        
-        
+       
+       /* let tabbar = tabBarController as! TabBarViewController
+        quotes = tabbar.quotes
+        user = tabbar.user
+        */
+        ReadQuotes()
         
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "quotes")
     }
+    
+    func ReadQuotes() {
+        SVProgressHUD.show()
+        let quoteDb = Database.database().reference().child("Quotes").queryOrdered(byChild: "id")
+        quoteDb.observe(.childAdded) { (snapshot) in
+            let snapshotValue = snapshot.value as! Dictionary<String, Any>
+            let userQuote = snapshotValue["user"] as! String
+            
+                self.quote = Quote(id: snapshotValue["id"] as! String,
+                                   quote: snapshotValue["quote"] as! String,
+                                   user: userQuote)
+                
+                //usuario: snapshotValue["usuario"] as! String
+                self.quotes.append(self.quote)
+                self.quotes.reverse()
+                self.tableView.reloadData()
+        }
+        SVProgressHUD.dismiss()
+    }
+
     
     // MARK: - Table view data source
     

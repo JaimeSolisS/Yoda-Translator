@@ -21,6 +21,7 @@
 		DA7F0D7F22CB1EB9009C0372 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA7F0D7E22CB1EB9009C0372 /* GoogleService-Info.plist */; };
 		DA7F0D8122CB2E1E009C0372 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F0D8022CB2E1E009C0372 /* RegisterViewController.swift */; };
 		DA7F0D8722CB3B9B009C0372 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F0D8622CB3B9B009C0372 /* TabBarViewController.swift */; };
+		DA7F0DAD22CD825B009C0372 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F0DAC22CD825B009C0372 /* RulesViewController.swift */; };
 		DA85D20C22C5C3EB0055655B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85D20A22C5C3EB0055655B /* TableViewCell.swift */; };
 		DA85D20D22C5C3EB0055655B /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA85D20B22C5C3EB0055655B /* TableViewCell.xib */; };
 		DA85D20F22C5CCF70055655B /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85D20E22C5CCF70055655B /* Quote.swift */; };
@@ -48,6 +49,7 @@
 		DA7F0D7E22CB1EB9009C0372 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA7F0D8022CB2E1E009C0372 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DA7F0D8622CB3B9B009C0372 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		DA7F0DAC22CD825B009C0372 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		DA85D20A22C5C3EB0055655B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		DA85D20B22C5C3EB0055655B /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		DA85D20E22C5CCF70055655B /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				DA75C35B22C41FB40086D6FB /* AppDelegate.swift */,
 				DA75C35D22C41FB40086D6FB /* ViewController.swift */,
 				DA75C35F22C41FB40086D6FB /* Main.storyboard */,
+				DA7F0DAC22CD825B009C0372 /* RulesViewController.swift */,
 				DA7F0D8622CB3B9B009C0372 /* TabBarViewController.swift */,
 				DA7F0D8022CB2E1E009C0372 /* RegisterViewController.swift */,
 				DA85D21422C5ED6B0055655B /* YodishGeneratorViewController.swift */,
@@ -268,6 +271,7 @@
 				DA85D20F22C5CCF70055655B /* Quote.swift in Sources */,
 				DA85D21322C5E3530055655B /* FavoritesTableViewController.swift in Sources */,
 				DA7F0D8722CB3B9B009C0372 /* TabBarViewController.swift in Sources */,
+				DA7F0DAD22CD825B009C0372 /* RulesViewController.swift in Sources */,
 				DA75C35C22C41FB40086D6FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

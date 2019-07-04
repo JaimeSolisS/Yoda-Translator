@@ -7,11 +7,10 @@
 //
 
 import UIKit
-
-protocol quoteDelegate {
-    func sendQuote (quote: Quote)
-}
-
+import Alamofire
+import SwiftyJSON
+import Firebase
+import FirebaseDatabase
 
 
 class YodishGeneratorViewController: UIViewController, UITextViewDelegate {
@@ -20,15 +19,26 @@ class YodishGeneratorViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var tvMyQuote: UITextView!
     @IBOutlet weak var tvYodishQuote: UITextView!
     
-    var delegate: quoteDelegate?
     
     var quote: Quote!
     var yodish: String!
+    var quotes = [Quote]()
+    var quoteStr: String!
+    var user: String!
+    
+    //URL
+//"https://api.funtranslations.com/translate/yoda.json?text=Master%20Obiwan%20has%20lost%20two%20planets."
+    
+    let baseURL = "https://api.funtranslations.com/translate/yoda.json?text="
+    var quoteToYodish: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.tvMyQuote.delegate = self
+        
+      //  let tabbar = tabBarController as! TabBarViewController
+       // quote = tabbar.quote
+       // quotes = tabbar.quotes
       
     }
     
@@ -36,6 +46,24 @@ class YodishGeneratorViewController: UIViewController, UITextViewDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+    
+    @IBAction func LogOut(_ sender: UIBarButtonItem) {
+    /*  print("Entro")
+        do {
+            try Auth.auth().signOut()
+            print("LogOut")
+           // navigationController?.popToRootViewController(animated: true)
+        } catch {
+            let alerta = UIAlertController(title: "Error", message: "there was an error logging out", preferredStyle: .alert)
+            
+            alerta.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            
+            present(alerta, animated: true, completion: nil)
+            print("error: there was an error logging out")
+        }*/
+    }
+    
+    
     
     
     @IBAction func SeekAdvice(_ sender: UIButton) {
@@ -54,8 +82,61 @@ class YodishGeneratorViewController: UIViewController, UITextViewDelegate {
     
     
     @IBAction func ConvertToYodish(_ sender: Any) {
-         yodish = tvMyQuote.text
-        tvYodishQuote.text = yodish
+        
+        if tvMyQuote.text  != "" {
+            
+            quoteToYodish = tvMyQuote.text.replacingOccurrences(of: " ", with: "%20")
+            let finalURL = baseURL + quoteToYodish
+            
+            
+            print(finalURL)
+            
+            Alamofire.request(finalURL, method: .get).responseJSON { response in
+                
+                if response.result.isSuccess {
+                    print("inicio")
+                    print("Si pudo obtener los datos")
+                    let convertJSON : JSON = JSON(response.result.value!)
+                    print(convertJSON)
+                    let amountJSON = convertJSON["contents"].dictionaryValue
+                    print("amountJSON:")
+                    print(amountJSON)
+                    let errorAmountJSON = convertJSON["error"].dictionaryValue
+                    print("amountJSON:")
+                    print(errorAmountJSON)
+                    
+                    for (key, value) in amountJSON{
+                        if key == "translated"{
+                            self.yodish = value.string!
+                        }
+                    }
+                            for (key, value) in errorAmountJSON{
+                                if key == "message"{
+                                    print("Entra AQUI")
+                                    self.yodish = value.string!
+                                }
+                        }
+                    
+                    print("control--->")
+                    print(self.yodish!)
+                    self.tvYodishQuote.text = self.yodish
+                    
+                } else {
+                    print ("no se pudo conectar")
+                }
+            }
+            
+        } else {
+            let alerta = UIAlertController(title: "Error", message: "Write something, please", preferredStyle: .alert)
+            alerta.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            present(alerta,animated: true, completion: nil)
+        }
+        
+      
+        
+        
+        
+     
         
         let pasteboard = UIPasteboard.general
         pasteboard.string = tvMyQuote.text
@@ -64,13 +145,24 @@ class YodishGeneratorViewController: UIViewController, UITextViewDelegate {
   
     
     @IBAction func SaveQuote(_ sender: UIButton) {
-        //print(tvYodishQuote.text!)
-        quote = Quote(quote: yodish)
-        print(quote.quote)
-        delegate?.sendQuote(quote: quote)
-         self.navigationController?.popViewController(animated: true)
+        
+        let tabbar = tabBarController as! TabBarViewController
+        quoteStr = yodish
+        user = tabbar.user
+      
+          let quoteDb = Database.database().reference().child("Quotes")
+      
+        let id = quoteDb.childByAutoId().key!
+        let quoteDiccionario =
+            ["id": id as String,
+             "quote": quoteStr as String,
+             "user": user as String] as [String: Any]
+        quoteDb.child(id).setValue(quoteDiccionario)
+        
         
     }
+    
+   
     
     /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -86,15 +178,26 @@ class YodishGeneratorViewController: UIViewController, UITextViewDelegate {
   
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        print("Entro")
+        do {
+            try Auth.auth().signOut()
+            print("LogOut")
+            // navigationController?.popToRootViewController(animated: true)
+        } catch {
+            let alerta = UIAlertController(title: "Error", message: "there was an error logging out", preferredStyle: .alert)
+            
+            alerta.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            
+            present(alerta, animated: true, completion: nil)
+            print("error: there was an error logging out")
+        }
     }
-    */
+    
     
     
 

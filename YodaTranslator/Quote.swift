@@ -10,13 +10,17 @@ import UIKit
 
 class Quote: NSObject {
     
+     var id: String
     var quote: String
+    var user: String
    
   
     
-    init(quote: String){
-        
+    init(id: String, quote: String, user: String){
+    
+    self.id = id
      self.quote = quote
+     self.user = user 
 
     }
 

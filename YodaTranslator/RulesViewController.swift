@@ -1,42 +1,30 @@
 //
-//  TabBarViewController.swift
+//  RulesViewController.swift
 //  YodaTranslator
 //
-//  Created by Jaime Solís on 7/2/19.
+//  Created by Jaime Solís on 7/3/19.
 //  Copyright © 2019 ITESM. All rights reserved.
 //
 
 import UIKit
 import Firebase
-import SVProgressHUD
 
-class TabBarViewController: UITabBarController {
+class RulesViewController: UIViewController {
     
-    var quotes = [Quote]()
-    var quoteStr: String!
-    var user: String!
+     var user: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        user = Auth.auth().currentUser?.email
-        
-        
-        // self.navigationController!.topViewController!.navigationItem.title = "Sign Out"
-        
-       /* let backItem = UIBarButtonItem()
-        backItem.title = "Regresa"
-        navigationItem.backBarButtonItem = backItem */
-        
-        
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func Desconectar(_ sender: Any) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Entro")
         do {
             try Auth.auth().signOut()
-            navigationController?.popToRootViewController(animated: true)
+            print("LogOut")
+            // navigationController?.popToRootViewController(animated: true)
         } catch {
             let alerta = UIAlertController(title: "Error", message: "there was an error logging out", preferredStyle: .alert)
             
@@ -46,7 +34,6 @@ class TabBarViewController: UITabBarController {
             print("error: there was an error logging out")
         }
     }
-    
 
     /*
     // MARK: - Navigation

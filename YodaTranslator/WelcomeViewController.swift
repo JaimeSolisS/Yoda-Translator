@@ -61,6 +61,11 @@ class WelcomeViewController: UIViewController, UITextFieldDelegate {
     }
     
 
+    @IBAction func unwindToWelcome(_ unwindSegue: UIStoryboardSegue) {
+        // Use data from the view controller which initiated the unwind segue
+        tfUser.text = ""
+        tfPassword.text = ""
+    }
     /*
     // MARK: - Navigation
 
